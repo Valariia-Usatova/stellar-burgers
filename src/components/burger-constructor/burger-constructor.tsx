@@ -23,10 +23,6 @@ export const BurgerConstructor: FC = () => {
   const constructorItems = useSelector((state) => state.builder);
   const isAuth = useSelector(isAuthenticated);
 
-  // const orderRequest = false;
-
-  // const orderModalData = null;
-
   const onOrderClick = () => {
     if (!constructorItems.bun || orderRequest) return;
     if (!isAuth) {
@@ -57,8 +53,6 @@ export const BurgerConstructor: FC = () => {
       ),
     [constructorItems]
   );
-
-  // return null;
 
   return (
     <BurgerConstructorUI

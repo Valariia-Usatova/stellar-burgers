@@ -8,10 +8,6 @@ export const Profile: FC = () => {
   const dispatch = useDispatch();
   const { data: user } = useSelector((store) => store.user);
   /** TODO: взять переменную из стора */
-  // const user = {
-  //   name: '',
-  //   email: ''
-  // };
 
   const [formValue, setFormValue] = useState({
     name: user?.name || '',
